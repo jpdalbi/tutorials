@@ -45,6 +45,26 @@
           {
             "activated": true,
             "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "answer"
+              },
+              "op2": {
+                "type": "string",
+                "value": ""
+              },
+              "op": "!="
+            },
+            "children": [],
+            "id": "51e92733-2071-4ed1-8c69-22fb9c678dc4",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
               "label": "Test"
             },
             "properties": {
