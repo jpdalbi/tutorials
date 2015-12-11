@@ -12,22 +12,59 @@
       {
         "activated": true,
         "metadata": {
-          "label": "Test"
+          "label": ""
         },
-        "properties": {
-          "name": "Say",
-          "inputParams": [
-            {
-              "key": "message",
-              "type": "string",
-              "value": "Salut mon pote"
-            }
-          ],
-          "outputParams": []
-        },
-        "children": [],
-        "id": "69485495-f3a4-4a56-9b37-67c36fc05e33",
-        "type": "action"
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Prompt",
+              "inputParams": [
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "message à saisir"
+                }
+              ],
+              "outputParams": [
+                {
+                  "key": "answer",
+                  "type": "entityKnowledge",
+                  "value": "answer"
+                }
+              ]
+            },
+            "children": [],
+            "id": "6908adc1-53c5-4f98-94b3-a36e0bf6c2ee",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Test"
+            },
+            "properties": {
+              "name": "Say",
+              "inputParams": [
+                {
+                  "key": "message",
+                  "type": "entityKnowledge",
+                  "value": "answer"
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "69485495-f3a4-4a56-9b37-67c36fc05e33",
+            "type": "action"
+          }
+        ],
+        "id": "eb740d58-115f-4b19-8ad4-eb57ac23be01",
+        "type": "sequence"
       }
     ],
     "id": "dd8c0070-90ea-47d7-b376-f7f6a607c8df"
