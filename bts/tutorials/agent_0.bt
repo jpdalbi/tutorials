@@ -8,7 +8,28 @@
       "label": ""
     },
     "properties": {},
-    "children": [],
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": "Test"
+        },
+        "properties": {
+          "name": "Say",
+          "inputParams": [
+            {
+              "key": "message",
+              "type": "string",
+              "value": "Salut mon pote"
+            }
+          ],
+          "outputParams": []
+        },
+        "children": [],
+        "id": "69485495-f3a4-4a56-9b37-67c36fc05e33",
+        "type": "action"
+      }
+    ],
     "id": "dd8c0070-90ea-47d7-b376-f7f6a607c8df"
   }
 ]
