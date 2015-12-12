@@ -117,7 +117,53 @@
               "statusCondition": "failsIfAnyFails",
               "retryPolicy": "propagateToRunning"
             },
-            "children": [],
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "DisplayCityWeather",
+                  "inputParams": [
+                    {
+                      "key": "CityName",
+                      "type": "entityKnowledge",
+                      "value": "answer"
+                    },
+                    {
+                      "key": "Weather",
+                      "type": "entityKnowledge",
+                      "value": "answer"
+                    }
+                  ],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "156980f6-b041-4fab-bf83-4094f5c24ecf",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "Say",
+                  "inputParams": [
+                    {
+                      "key": "Weather",
+                      "type": "entityKnowledge",
+                      "value": "Weather.description"
+                    }
+                  ],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "fc4ceae4-6335-4e5a-afbd-44ddf10b6d41",
+                "type": "action"
+              }
+            ],
             "id": "561b16f4-c65f-4485-b3bf-21880d9da093",
             "type": "parallel"
           }
