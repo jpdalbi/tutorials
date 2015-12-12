@@ -19,7 +19,7 @@
           {
             "activated": true,
             "metadata": {
-              "label": ""
+              "label": "Prompt"
             },
             "properties": {
               "name": "Prompt",
@@ -81,6 +81,45 @@
             "children": [],
             "id": "69485495-f3a4-4a56-9b37-67c36fc05e33",
             "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": "GetCityWeather"
+            },
+            "properties": {
+              "name": "GetCityWeather",
+              "inputParams": [
+                {
+                  "key": "CityName",
+                  "type": "entityKnowledge",
+                  "value": "answer"
+                }
+              ],
+              "outputParams": [
+                {
+                  "key": "Weather",
+                  "type": "entityKnowledge",
+                  "value": "Weather"
+                }
+              ]
+            },
+            "children": [],
+            "id": "effcdcdd-ce7e-484f-a927-a2b67eaae7bb",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "statusCondition": "failsIfAnyFails",
+              "retryPolicy": "propagateToRunning"
+            },
+            "children": [],
+            "id": "561b16f4-c65f-4485-b3bf-21880d9da093",
+            "type": "parallel"
           }
         ],
         "id": "eb740d58-115f-4b19-8ad4-eb57ac23be01",
